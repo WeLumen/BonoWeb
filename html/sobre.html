@@ -7,19 +7,19 @@
   <title>Bono | Soluções ESG Simplificadas</title>
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header class="navbar">
       <img src="/img/Logo1.png" alt="Logo Bono" class="logo" />
       <nav class="nav-links">
-        <a href="">Home</a>
+        <a href="/index.html">Home</a>
         <a href="#sobre">Sobre</a>
-        <a href="#solucao">Solução</a>
-        <a href="#impacto">Impacto</a>
+        <a href="/index.html#solucao">Solução</a>
+        <a href="/index.html#impacto">Impacto</a>
         <a href="#contato">Contato</a>
       </nav>
     </header>
-<main>
 
     <section class="hero" id="home">
         <video autoplay muted loop playsinline class="hero-bg-video">
@@ -34,10 +34,14 @@
         </div>
       </section>
 
-      <section class="sobre">
+      <section class="sobre-bono">
         <div class="sobre-container">
-          <h2>SOBRE A BONO</h2>
-           <p>
+          <div class="sobre-titulo">
+            <h2>Quem Somos</h2>
+          </div>
+
+          <div class="sobre-texto">
+          <p>
             A Bono transforma desafios ambientais em oportunidades concretas de receita. Somos uma startup que converte ativos ambientais em valores mensuráveis, rastreando o sequestro de carbono gerado por planos de arborização e reflorestamento.
           </p>
           <p>
@@ -46,28 +50,135 @@
           <p>
             Utilizamos tecnologia de ponta, como <strong>blockchain</strong> e <strong>IoT</strong>, para garantir transparência e rastreabilidade no registro de emissões e compensações de carbono. Nosso compromisso é conectar sustentabilidade e inovação, contribuindo para um futuro mais verde e economicamente viável.
           </p>
-          <h3>Equipe Fundadora</h3>
-          <div class="equipe-grid">
-            <div class="membro">
-              <h4>Claudionice Rosa</h4>
-              <p>CEO e Diretora de Projetos. Estudante de Negócios Sustentáveis e ESG. Experiência em gestão de projetos, inovação e destaque em iniciativas da ONU-Habitat.</p>
-            </div>
-            <div class="membro">
-              <h4>Kathllyn Santos</h4>
-              <p>CMO e Diretora de Marketing. Especialista em branding, comunicação e desenvolvimento front-end. Lidera o posicionamento da marca Bono.</p>
-            </div>
-            <div class="membro">
-              <h4>Maryanne Carvalho</h4>
-              <p>CTO e Diretora de Tecnologia. Desenvolvedora e estrategista digital. Cria soluções sustentáveis com foco em inovação e impacto real.</p>
-            </div>
-            <div class="membro">
-              <h4>Danielly Ketlyn</h4>
-              <p>CSO e Diretora de Vendas. Responsável pela liderança comercial, parcerias estratégicas e crescimento sustentável da Bono.</p>
-            </div>
           </div>
         </div>
       </section>
-      
+        <section class="mvv-section">
+          <div class="mvv-container">
+            <div class="mvv-box">
+              <img src="/img/missao.png" alt="Ícone Missão"/>
+              <h3>Missão</h3>
+              <p>Criar experiências únicas e entregar excelência em cada projeto.</p>
+            </div>
+        
+            <div class="mvv-box">
+              <img src="/img/visao.png" alt="Ícone Visão"/>
+              <h3>Visão</h3>
+              <p>Estar entre as melhores agências globais em até 10 anos.</p>
+            </div>
+        
+            <div class="mvv-box">
+              <img src="/img/valores.png" alt="Ícone Valores" />
+              <h3>Valores</h3>
+              <ul>
+                <li>Excelência</li>
+                <li>Resiliência</li>
+                <li>Criatividade</li>
+                <li>Colaboração</li>
+                <li>Transparência</li>
+                <li>Flexibilidade</li>
+                <li>Inovação</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="parceiros-section">
+          <h2>Parceiros</h2>
+          <p class="subtitulo">Tecnologia blockchain para rastreabilidade ESG padronizada, confiável e auditável</p>
+          <div class="parceiros-container">
+            <div class="parceiro-card"><img src="/img/shell.png" alt="Shell"></div>
+            <div class="parceiro-card"><img src="/img/cietec.png" alt="Cietec"></div>
+            <div class="parceiro-card"><img src="/img/jabrasil.png" alt="JABrasil"></div>
+          </div>
+        </section>
+
+        <section class="lideranca-section">
+          <h2>Conheça nossas lideranças</h2>
+          <div class="lideranca-container">
+        
+            <div class="lider-card" onclick="this.classList.toggle('flipped')">
+              <div class="card-inner">
+                <!-- Frente -->
+                <div class="card-front">
+                  <img src="/img/nice.png" alt="Nice">
+                  <div class="card-info">
+                    <h3>Claudionice Rosa</h3>
+                    <p>Co-founder & CEO</p>
+                    <span class="arrow">→</span>
+                  </div>
+                </div>        
+                <!-- Verso -->
+                <div class="card-back">
+                  <p>Fundadora da Bono, Claudionice, CEO e estudante de Negócios Sustentáveis e ESG na UniCV, une expertise em gestão de projetos e inovação desde 2018. Passou por aceleradoras no Vale do Silício (Founder Institute) e foi nomeada Embaixadora da Consultas Cidades Sustentáveis (ONU-Habitat/Colab Brasil), destacando-se na promoção de desenvolvimento urbano sustentável. Trabalhou no Programa de Fortalecimento de Agências de Desenvolvimento Econômico da Vale, alinhando crescimento socioeconômico e impacto positivo. Com visão estratégica e práticas de ESG, lidera iniciativas que conectam eficiência, inovação responsável e valor social, inspirando modelos de negócios alinhados ao futuro sustentável.</p>
+                  <span class="arrow">→</span>
+
+                </div>
+              </div>
+            </div>
+            <div class="lider-card" onclick="this.classList.toggle('flipped')">
+              <div class="card-inner">
+                <!-- Frente -->
+                <div class="card-front">
+                  <img src="/img/Katy.jpg" alt="Katy">
+                  <div class="card-info">
+                    <h3>Claudionice Rosa</h3>
+                    <p>Co-founder & CTO</p>
+                    <span class="arrow">→</span>
+                  </div>
+                </div>            
+                <!-- Verso -->
+                <div class="card-back">
+                  <p>Fundadora da Bono, Kathllyn Santos é Diretora de Marketing e Cursada  em Marketing pela Estácio. Possui formação técnica em Desenvolvimento Web Fullstack pela Generation Brasil (em parceria com a Ambev) e especialização em front-end pela JA Brasil, com apoio da IBM. Na Kick, aprimorou conhecimentos em front-end, oratória e soft skills, fortalecendo sua liderança e comunicação. Também atua como designer gráfico, com certificações pela Udemy em branding e identidade visual. Hoje, lidera estratégias de marketing com foco em posicionamento de marca, autoridade digital e experiências que geram impacto real.</p>
+                  <span class="arrow">→</span>
+
+                </div>
+              </div>
+            </div>
+            <div class="lider-card" onclick="this.classList.toggle('flipped')">
+              <div class="card-inner">
+                <!-- Frente -->
+                <div class="card-front">
+                  <img src="/img/mary.jpg" alt="Mary">
+                  <div class="card-info">
+                  <h3>Maryanne Carvalho</h3>
+                  <p>Co-founder & CTO</p>
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            
+                <!-- Verso -->
+                <div class="card-back">
+                  <p>Fundadora da Bono,Maryanne Carvalho é Diretora de Tecnologia. Atua com foco na criação de soluções digitais inteligentes e sustentáveis, unindo tecnologia, estratégia e propósito em cada projeto. Com experiência em desenvolvimento web e ferramentas NoCode, lidera iniciativas que transformam desafios em produtos funcionais, acessíveis e com impacto real.Formada em Tecnologia pela Kick e em Análise de Sistemas pela Uninove, combina conhecimento técnico com sensibilidade para entender as necessidades dos clientes e traduzi-las em soluções inovadoras. Também atua na gestão de mídias sociais, colaborando com o posicionamento digital de marcas que buscam relevância e autenticidade.Sua formação em Ciências Contábeis pela FMU complementa sua atuação, garantindo uma visão integrada entre tecnologia, gestão e sustentabilidade financeira.</p>
+                  <span class="arrow">→</span>
+
+                </div>
+              </div>
+            </div>
+            <div class="lider-card" onclick="this.classList.toggle('flipped')">
+              <div class="card-inner">
+                <!-- Frente -->
+                <div class="card-front">
+                  <img src="/img/Dany.jpg" alt="Dany">
+                  <div class="card-info">
+                  <h3>Danielly Ketlyn</h3>
+                  <p>Co-founder & CSO</p>
+                  <span class="arrow">→</span>
+                  
+                </div>
+              </div>
+                <!-- Verso -->
+                <div class="card-back">
+                  <p>Fundadora da Bono, Danielly Ketlyn é graduada pela instituição Nove de Julho e atua como Diretora de Vendas, onde se destaca na liderança de estratégias comerciais voltadas para o crescimento da empresa. Com foco em resultados e visão estratégica, ela garante o alto desempenho da equipe de vendas, buscando sempre novas oportunidades e parcerias inovadoras. Comprometida com a sustentabilidade, Danielly aplica práticas que beneficiam tanto o sucesso comercial quanto o bem-estar a longo prazo da empresa e da sociedade. Sua abordagem é marcada pela combinação de liderança, inovação e responsabilidade.
+                  </p>
+                  <span class="arrow">→</span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
     <section class="contato-section" id="contato">
 
         <div class="contato-container">
@@ -112,7 +223,7 @@
               <div class="termos-container">
                 <div class="termos">
                   <input type="checkbox" required>
-                  <span>Li e concordo com os <a href="#">Termos de Privacidade</a></span>
+                  <span>Li e concordo com os <a href="/html/policitadeprivacidade.html">Termos de Privacidade</a></span>
                 </div>
       
                 <button type="submit" class="botao-enviar">Enviar</button>
@@ -126,7 +237,6 @@
         </div>
       </section>
       
-</main>
 
     <footer class="footer">
         <div class="footer-top">
