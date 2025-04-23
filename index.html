@@ -7,20 +7,26 @@
   <title>Bono | Soluções ESG Simplificadas</title>
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 
 </head>
 <body>
   <header class="navbar">
-    <img src="./img/Logo1.png" alt="Logo Bono" class="logo" />
+    <img src="/img/Logo1.png" alt="Logo Bono" class="logo" />
+  
+    <button class="menu-toggle" aria-label="Abrir menu">
+      &#9776;
+    </button>
+  
     <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="/html/sobre.html">Sobre</a>
-      <a href="#solucao">Solução</a>
-      <a href="#impacto">Impacto</a>
+      <a href="/index.html">Home</a>
+      <a href="#sobre">Sobre</a>
+      <a href="/index.html#solucao">Solução</a>
+      <a href="/index.html#impacto">Impacto</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
+  <script src="navbar.js" defer></script>
+  
   <section class="hero" id="home">
     <video autoplay muted loop playsinline class="hero-bg-video">
       <source src="./img/Banner.mp4" type="video/mp4" />
@@ -59,7 +65,6 @@
           <button class="btngreen" onclick="window.location.href='/html/sobre.html'">Leia Mais</button>
         </div>
       </div>
-    </div>
 
   </section>
   <section class="solucao" id="solucao">
@@ -193,7 +198,6 @@
     </div>
   </section>
   <section class="contato-section" id="contato">
-    
 
     <div class="contato-container">
       
@@ -237,8 +241,8 @@
           <div class="termos-container">
             <div class="termos">
               <input type="checkbox" required>
-              <span>Li e concordo com os <a href="/html/policitadeprivacidade.html">Termos de Privacidade</a></span>
-                </div>
+              <span>Li e concordo com os <a href="#">Termos de Privacidade</a></span>
+            </div>
   
             <button type="submit" class="botao-enviar">Enviar</button>
           </div>
