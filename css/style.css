@@ -9,49 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  margin-right: 20px;
-}
-.navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  background-color: transparent;
-}
-  
-.navbar h1 {
-  margin: 0;
-  font-size: 24px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 30px;
-  margin-right: 80px; 
-}
-
-.nav-links a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.logo {
-  height: 40px;
-}
-
 .hero {
   position: relative;
   height: 100vh; /* ocupa a altura inteira da tela */
@@ -940,35 +897,7 @@ footer p a:hover {
   .hero p {
     font-size: 16px;
   }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #111;
-    position: absolute;
-    top: 70px;
-    position: absolute;
-    width: 100%;
-    right: 0;
-    padding: 20px;
-  }
-
-  .nav-links.active {
-    display: flex;
-      cursor: pointer;
-      flex-direction: column;
-      gap: 5px;
-  }
-
-   .menu {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    
-  }
-
-  .menu-toggle {
-    display: block;
-  }
+  
   .btn {
     padding: 12px 20px;
     font-size: 13px;

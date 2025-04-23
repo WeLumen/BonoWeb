@@ -8,18 +8,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/menu.css">
 </head>
 <body>
-    <header class="navbar">
-      <img src="/img/Logo1.png" alt="Logo Bono" class="logo" />
-      <nav class="nav-links">
-        <a href="/index.html">Home</a>
-        <a href="#sobre">Sobre</a>
-        <a href="/index.html#solucao">Solução</a>
-        <a href="/index.html#impacto">Impacto</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </header>
+  <header class="navbar">
+    <img src="/img/Logo1.png" alt="Logo Bono" class="logo" />
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="/index.html#solucao">Solução</a></li>
+        <li><a href="/index.html#impacto">Impacto</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
     <section class="hero" id="home">
         <video autoplay muted loop playsinline class="hero-bg-video">
@@ -264,6 +268,6 @@
           </p>
         </div>
       </footer>
-
+      <script src="/js/navbar.js" defer></script>
 </body>
 </html>

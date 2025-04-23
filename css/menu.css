@@ -1,0 +1,115 @@
+/* Impede o overflow lateral */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Impede o scroll horizontal */
+  width: 100%; /* Garantir que o body tenha 100% da largura da tela */
+}/* Botão menu hamburguer */
+
+/* Botão menu hamburguer */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;  /* Posicionamento absoluto */
+  top: 20px;           /* Distância do topo */
+  right: 20px;         /* Distância da lateral direita */
+  z-index: 1001;       /* Garante que o ícone fique sobre os outros elementos */
+}
+
+
+/* Cabeçalho / Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: transparent;
+}
+
+/* Logo */
+.logo {
+  height: 40px;
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  margin-right: 40px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease; /* Adiciona efeito suave nos links */
+}
+
+.nav-links li a:hover {
+  color: #39b54a; /* Altera a cor ao passar o mouse sobre o link */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#113624; /* Fundo semi-transparente */
+    padding: 30px 20px;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(-100%); /* Inicialmente fora da tela */
+    transition: all 0.5s ease; /* Transição suave para abrir e fechar */
+  }
+
+  /* Quando o menu está visível */
+  .nav-links.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0); /* Menu desliza para baixo */
+  }
+
+  .nav-links li {
+    margin: 15px 0; /* Maior espaçamento entre os links */
+    font-size: 22px; /* Aumenta o tamanho da fonte */
+    font-weight: 600; /* Deixa a fonte mais forte */
+  }
+
+  .nav-links li a {
+    font-size: 24px;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links li a:hover {
+    color: #39b54a; /* Cor de destaque para o hover */
+  }
+}
