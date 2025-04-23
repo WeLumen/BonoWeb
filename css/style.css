@@ -369,6 +369,7 @@ html {
   position: relative;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 .etapa img {
@@ -405,6 +406,9 @@ html {
   font-size: 24px;
   font-weight: bold;
   user-select: none;
+}
+.scroll-btn {
+  display: none; /* padrão: não exibe */
 }
 .impacto-section {
   background-color: #fff;
@@ -981,5 +985,86 @@ footer p a:hover {
 
   .descricao {
     text-align: center;
+  }
+  .cards-solucao {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-solucao {
+    width: 90%;
+    max-width: 400px;
+  }
+  .etapas-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .etapas-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+  }
+
+  .etapa {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+  }
+
+  .scroll-btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .scroll-btn.left {
+    left: 10px;
+  }
+
+  .scroll-btn.right {
+    right: 10px;
+  }
+  .contato-imagem {
+    display: none;
+  }
+
+  .contato-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contato-info {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .mvv-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mvv-box {
+    width: 90%; /* ou 100% se quiser ocupar toda a largura */
+  }
+  .lideranca-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lider-card img {
+    height: auto;
+    aspect-ratio: 1 / 1;
   }
 }
