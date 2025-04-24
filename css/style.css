@@ -1038,4 +1038,10 @@ footer p a:hover {
     width: 100%;
     padding: 0 1rem;
   }
+  .card-front img {
+    width: 100%;
+    height: 300px; /* Ou outro valor que funcione bem visualmente */
+    object-fit: cover;
+    border-radius: 12px; /* opcional, se quiser bordas arredondadas */
+  }
 }
