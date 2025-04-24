@@ -301,13 +301,15 @@ html {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   background-color: #113624;
   padding: 20px;
   margin: 20px 20px;
   border-radius: 30px;
   overflow-x: auto;
   height: 280px; /* ✅ altura fixa para impedir expansão */
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 0;
 }
 
 
@@ -359,10 +361,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;color: white;
-  font-size: 24px;
-  font-weight: bold;
-  user-select: none;
+  height: 100%;
 }
 .scroll-btn {
   display: none; /* padrão: não exibe */
@@ -594,6 +593,8 @@ html {
   background-color: #f1f1f1;
   border: 1px solid #113624;
   border-radius: 16px;
+  border: 2px solid #2e7d32;
+  border-radius: 12px;
   padding: 30px;
   width: 30%; 
   text-align: center;
@@ -924,68 +925,24 @@ footer p a:hover {
     width: 90%;
     max-width: 400px;
   }
-  .etapas-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  .etapas-container {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 20px;
-  }
-
-  .etapa {
-    scroll-snap-align: start;
-    flex: 0 0 auto;
-  }
-
-  .scroll-btn {
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.3);
-    border: none;
-    color: white;
-    font-size: 24px;
-    padding: 8px;
-    border-radius: 50%;
-    z-index: 10;
-    cursor: pointer;
-  }
-
-  .scroll-btn.left {
-    left: 10px;
-  }
-
-  .scroll-btn.right {
-    right: 10px;
-  }
-  .contato-imagem {
-    display: none;
-  }
-
-  .contato-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contato-info {
-    width: 100%;
-    padding: 0 1rem;
-  }
   .mvv-container {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0px;
+    flex-direction: row;
   }
-
-  .mvv-box {
-    width: 90%; /* ou 100% se quiser ocupar toda a largura */
-  }
+   .mvv-box {
+    background-color: #f5f5f5;
+    border: 2px solid #2e7d32;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+    box-sizing: border-box;  }
   .lideranca-container {
     display: flex;
     flex-direction: column;
@@ -995,5 +952,90 @@ footer p a:hover {
   .lider-card img {
     height: auto;
     aspect-ratio: 1 / 1;
+  }
+  .impacto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 16px;
+  }
+  .etapas-container {
+    display: flex;
+    flex-direction: column; /* agora empilha os cards na vertical */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: y mandatory;
+    gap: 20px;
+    padding: 20px;
+    margin: 0;
+    background-color: transparent;
+    border-radius: 0;
+    scrollbar-width: none; /* Firefox */
+    scroll-padding-top: 20px; /* para rolagem suave ao topo de cada card */
+  }
+
+  .etapas-container::-webkit-scrollbar {
+    white-space: nowrap; /* se os itens forem inline */
+  }
+
+  .etapa {
+    scroll-snap-align: start;
+    flex: 0 0 220px; /* padroniza largura */
+    width: 140px;
+    min-height: 120px;
+    background-color: #113624;
+    border-radius: 20px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .etapa img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .etapa p {
+    display: none;
+    font-size: 14px;
+    margin: 0;
+  }
+  .etapa.active p {
+    display: block; /* Mostra ao clicar */
+  }
+  .seta {
+    flex: 0 0 auto;
+    font-size: 30px;
+    color: #514f4f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+  }
+
+  .impacto-card {
+    width: 100%;
+  }
+
+  .contato-imagem {
+    display: none;
+  }
+  .contato-section {
+    padding: 40px 16px;
+  }
+
+  .contato-container {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 24px;
+  }
+
+  .contato-info {
+    width: 100%;
+    padding: 0 1rem;
   }
 }
