@@ -174,7 +174,7 @@
 }
 .solucao {
   text-align: center;
-  padding: 80px 20px;
+  padding: 70px 20px;
   background-color: #f9fafa;
 }
 
@@ -182,7 +182,7 @@
   font-size: 36px;
   color: #113624;
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: 650px;
   position: relative;
 }
 
@@ -207,8 +207,9 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
   overflow-x: auto;
+  padding: 0 40px;
 }
 
 .card-solucao {
@@ -285,58 +286,65 @@
   margin: 8px auto 0;
   border-radius: 2px;
 }
-
 .etapas-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
+  gap: 10px;
+  flex-wrap: nowrap;
   background-color: #113624;
-  padding: 20px;
-  margin: 20px 20px;
+  padding: 30px;
+  margin: 10px auto;
   border-radius: 30px;
   overflow-x: auto;
-  height: 280px; /* ✅ altura fixa para impedir expansão */
+  overflow-y: hidden;
+  height: 250px;
   scroll-snap-type: x mandatory;
-  scroll-padding-left: 0;
+  scroll-padding-left: 20px;
+  scrollbar-width: none;
+  max-width: 1080px; /* NOVO: limitar a largura */
 }
 
-
+.etapas-container::-webkit-scrollbar {
+  display: none;
+}
 
 .etapa {
-  padding: 20px 15px;
+  flex: 0 0 auto;
+  padding: 15px;
   border-radius: 20px;
   width: 120px;
-  min-height: 120px;
+  min-height: 115px;
+  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
-  transition: all 0.3s ease;
-  position: relative;
-  cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
-  
+  text-align: center;
+  scroll-snap-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.etapa:hover {
+  background-color: #39b54a;
+  transform: scale(1.1);
 }
 
 .etapa img {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   margin-bottom: 10px;
 }
 
 .etapa p {
-  font-size: 15px;
+  font-size: 11px;
   margin: 0;
   display: none;
   text-align: center;
-}
-
-.etapa:hover {
-  background-color: #186422;
-  width: 160px;
 }
 
 .etapa:hover p {
@@ -353,8 +361,9 @@
   justify-content: center;
   height: 100%;
 }
+
 .scroll-btn {
-  display: none; /* padrão: não exibe */
+  display: none;
 }
 .impacto-section {
   background-color: #fff;
@@ -819,7 +828,57 @@
   display: block;
 }
 
+.privacy-title {
+  font-size: 2.5rem;
+  color: #113624; /* Verde neon da Bono */
+  margin-bottom: 2rem;
+  text-align: center;
+}
 
+.privacy-section {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.privacy-subtitle {
+  font-size: 1.8rem;
+  color: #113624;
+  margin-bottom: 1rem;
+}
+
+.privacy-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.privacy-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.privacy-item {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.privacy-link {
+  color: #113624;
+  text-decoration: underline;
+}
+
+.privacy-link:hover {
+  color: #39b54a;
+  text-decoration: none;
+}
+
+.privacy-update {
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+  margin-top: 3rem;
+}
 .footer {
   background-color: #113624;
   color: white;
@@ -971,7 +1030,7 @@ footer p a:hover {
   .etapa {
     scroll-snap-align: start;
     flex: 0 0 220px; /* padroniza largura */
-    width: 140px;
+    width: 150px;
     min-height: 120px;
     background-color: #113624;
     border-radius: 20px;

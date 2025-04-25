@@ -27,6 +27,9 @@ body, html {
   right: 20px;
   z-index: 1001; /* Colocando o z-index acima para ficar na frente do menu */
 }
+.menu-toggle.hide {
+  display: none !important;
+}
 
 /* Botão de fechar o menu (X) */
 .close-menu {
