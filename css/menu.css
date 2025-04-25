@@ -8,6 +8,10 @@ body, html {
   padding: 0;
   overflow-x: hidden; /* Impede o scroll horizontal */
   width: 100%; /* Garantir que o body tenha 100% da largura da tela */
+  font-family: 'Antonio', sans-serif;
+  background-color: #d3d1d1;
+  color: rgb(0, 0, 0);
+  scroll-behavior: smooth;
 }
 
 /* Botão menu hamburguer */
